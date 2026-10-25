@@ -1,6 +1,6 @@
 # PostureSense
 
-PostureSense is a browser-based posture check-in for desk work. Sit comfortably in view, set a personal reference in four seconds, and get a clear reminder when visible body alignment changes and stays changed.
+Privacy-first, real-time posture monitoring powered by MediaPipe pose detection running entirely in your browser. Set a personal reference for posture change reminders, or continue with visibility-only tracking without calibration.
 
 **Live demo:** [posturesense-ai-delta.vercel.app](https://posturesense-ai-delta.vercel.app/)
 

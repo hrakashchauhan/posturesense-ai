@@ -2,6 +2,8 @@
 
 PostureSense is a browser-based posture check-in for desk work. Sit comfortably in view, set a personal reference in four seconds, and get a clear reminder when visible body alignment changes and stays changed.
 
+**Live demo:** [posturesense-ai-delta.vercel.app](https://posturesense-ai-delta.vercel.app/)
+
 Pose inference runs in the browser. Camera frames and pose landmarks are not sent to an application server or saved. The app does download the site, MediaPipe model, and WASM runtime from the host when needed. No account, API key, database, or environment variable is required. It uses system fonts and does not request hosted fonts.
 
 > **Scope:** This is an educational wellness aid, not a medical or ergonomic assessment. Camera angle, visibility, thresholds, and model quality affect results. The measurements are relative to your calibration and are not a posture score or clinically validated threshold.

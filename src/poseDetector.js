@@ -9,11 +9,12 @@ export async function initializePoseDetector() {
   if (initializationPromise) return initializationPromise
 
   initializationPromise = (async () => {
-    const vision = await FilesetResolver.forVisionTasks('/wasm')
+    const assetBase = import.meta.env.BASE_URL
+    const vision = await FilesetResolver.forVisionTasks(`${assetBase}wasm`)
 
     poseLandmarker = await PoseLandmarker.createFromOptions(vision, {
       baseOptions: {
-        modelAssetPath: '/models/pose_landmarker_lite.task',
+        modelAssetPath: `${assetBase}models/pose_landmarker_lite.task`,
         delegate: 'CPU'
       },
       runningMode: 'VIDEO',
